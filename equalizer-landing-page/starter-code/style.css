@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Big+Shoulders+Display:wght@800;900&family=IBM+Plex+Sans:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Merriweather:ital@0;1&family=Outfit:wght@300;400;700&family=Plus+Jakarta+Sans:wght@500;700;800&family=Red+Hat+Display:wght@500;700;900&family=Space+Mono&family=Work+Sans:wght@400;800&display=swap');
+body {
+font-family: IBM Plex Sans;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+main {
+    width: 100vw;
+    height: 100vh;   
+} 
+
+    .container {
+        width: 375px; 
+        height: 1945px;
+        margin: auto;
+        background: url(./assets/bg-main-mobile.png) no-repeat 30px -220px, url(./assets/logo.svg) no-repeat 24.15px 39.99px;
+    }
+        .mainContainer {
+            display: flex;
+            flex-direction: column;            
+            margin: auto;   
+        }
+
+            .upperCont {
+                margin-top: 136px;
+                width: 375px; 
+                height: 470px;
+            }
+
+                h1 {
+                    padding-left: 24px;
+                    font-size: 40px;
+                    font-family: IBM Plex Sans;
+                }
+
+                .upperCont p {
+                    width: 327px;   
+                    padding-left: 24px;
+                    margin-bottom: 80px;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+
+            .screen {                  
+                width: 208px; 
+                height: 430px;                
+                padding-bottom: 100px;
+                padding-left: 80px;
+                padding-right: 85px;
+                margin-top: -80px;               
+                z-index: 1;
+            }
+
+            .screenCont {
+                
+                width: 375px;
+                height: 600px;
+                display: flex;  
+                background: url(./assets/bg-pattern-2.svg) no-repeat black;
+                background-position: 50% 0;
+                border-radius: 12px;
+            }
+
+            .middleCont {
+                    display: flex;
+                    text-align: center;
+                    justify-content: center;
+                    height: 504px;
+                    background-color: #FA7453;
+                    flex-direction: column;
+                    margin-top: 0;
+                    border-radius: 12px;
+                    padding-top: 21px;
+                    padding-bottom: 21px;
+                    margin-top: -170px;
+            }
+
+                .middleCont p,
+                h2
+                 {
+                    color: white;
+                    text-align: left;
+                    width: 320px;
+                    margin: auto;
+                    padding-left:  24px; 
+                }
+
+                .middleCont p {
+                    width: 320px;
+                    height: 140px;
+                    margin-bottom: 36px;
+                                  
+                }
+
+                .fourusd {
+                    display: flex;
+                    flex-direction: row;
+                    width: 165px;
+                    height: 52px;
+                    color: white;
+                    text-align: left;
+                    margin-left: 24px;
+                    margin-bottom: 32px;
+                }
+
+                .four {
+                    font-size: 65px;  
+                    margin-left: 24px;
+                    margin-top: 0;  
+                    line-height: 52px;
+                    font-weight: 700; 
+                }
+
+                .usd {
+                    margin: auto; 
+                }
+
+            .buttons {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                }
+
+                button {
+                    width: 296px;
+                    height: 61px;
+                    margin: auto;
+                    border-radius: 12px;
+                    border: none;
+                }
+
+                    .ios {                     
+                        margin-bottom: 16px;
+                        background-color: black;
+                        color: white;
+
+                    }
+
+                    .android {                   
+                        margin-top: 0;
+                        background-color: white;
+                        color: black;
+                        border-style: none;
+                    }
+
+                    .iosimage,
+                    .androidimage {
+                        margin-right: 11px;
+                    }
+
+                    .ios:hover {
+                        background-color: #66E2DC;
+                    }
+
+                    .android:hover {                 
+                        background-color: #FFB964;;                      
+                    }
+
+            footer {
+                display: flex;
+                flex-direction: column;              
+                }
+
+                .equalizer {
+                    padding: 24px; 
+                    margin-top: 50px;
+                    }
+
+                footer p {
+                    width: 327px;
+                    height: 105px;                    
+                    margin: auto;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 26px;
+                    color: #191826;
+                    margin-bottom: 30px;
+                }
+
+                   .email {
+                    font-weight: 700;
+                    }
+
+                .logos {
+                    display: flex;
+                    padding: 24px;                 
+                }
+                    
+                    .fb,
+                    .ins,
+                    .tw {
+                        margin-right: 20px;
+                    }
+
+                    .fb:hover,
+                    .ins:hover,
+                    .tw:hover {
+                        color: orange;
+                    }
+                   
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+        height: 1781px;
+        margin: auto;
+        background: url(./assets/bg-main-tablet.png) -400px -220px, url(./assets/logo.svg) 40px 61px, url(./assets/bg-pattern-1.svg) 500px -50px;/*url(./assets/bg-pattern-1.svg) no-repeat*/
+        background-repeat: no-repeat;
+        
+    }
+
+    .upperCont {
+        margin-top: 0;
+        margin-bottom: 300px;  
+        
+    }
+        h1, .container p {
+            padding-left: 40px;  
+        }
+
+        h1 {
+            font-size: 64px;
+            line-height: 64px;
+            font-weight: 700;
+            width: 520px;
+            padding-top: 0;
+            margin-top: 160px;   
+        }
+
+       .upperCont p {
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 400;
+            width: 514px;                 
+        }
+
+    .screenCont {  
+        display: flex;  
+        width: 696px; 
+        height: 600px;
+        margin: auto;
+        background: url(./assets/bg-pattern-2.svg) no-repeat black;
+        background-position: 50% 0;
+        border-radius: 12px;
+    }
+
+        .screen {
+            display: flex; 
+            margin-top: -100px;  
+            margin-left: 0;  
+            margin-right: auto;  
+            width: 270px;
+            height: 556px;        
+        }
+        
+    
+    .middleCont {
+        width: 399px;
+        height: 546px;
+        margin-left: 290px;
+        margin-top: -380px;
+        z-index: 1;
+        }
+
+        .middleCont p {
+            width: 302px;
+            padding-left: 0;
+            margin-top: 0; 
+        }
+
+        h2 {
+            margin-top: 48px; 
+            margin-bottom: 12px;
+        }
+ 
+
+        footer {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 86px;
+            margin-top: 86px;
+        }
+
+            .equaplusp {
+                display: flex;
+                flex-direction: column;                
+            }
+
+            .equaplusp p,
+            .equalizer {
+                margin: 0;
+                padding-left: 0;
+            }
+
+            .equalizer {
+                width: 147px;
+                height: 32px;
+            }
+
+            .logos {
+                width: 100px;
+                height: 16px;
+                padding: 0;
+            }
+
+            .tw {
+                margin-right: 0;
+            }
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        width: 1440px;
+        height: 1832px;
+        margin: auto;
+        background: url(./assets/bg-main-desktop.png) -400px -250px, url(./assets/logo.svg) 180px 61px, url(./assets/bg-pattern-1.svg) top right;
+        background-repeat: no-repeat;
+    }
+
+    h1 {
+        width: 1015px;
+        font-size: 88px;
+        line-height: 88px;
+    }
+
+    .upperCont p {
+        width: 825px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 34px;
+    }   
+
+    .screenCont {  
+        display: flex;  
+        width: 1110px; 
+        height: 600px;
+        margin: auto;
+        background: url(./assets/bg-pattern-2.svg) no-repeat black;
+        background-position: 34% 0;
+        border-radius: 12px;
+    }
+
+    .screen {
+        display: flex; 
+        margin-top: -200px;  
+        margin-left: 0;  
+        margin-right: auto;  
+        width: 270px;
+        height: 556px;        
+    }
+
+    .middleCont {
+        margin-left: 669px;
+        margin-top: -470px;
+        z-index: 1;
+    }
+
+    .upperCont {
+        margin-left: 140px;
+    }
+
+    .equaplusp {
+        flex-direction: row; 
+    }
+
+    .equalizer {
+        margin-right: 120px;
+        padding-top: 0;
+    }
+
+}
+
+
+
+
+
